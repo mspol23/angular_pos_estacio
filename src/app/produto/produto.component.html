@@ -5,12 +5,12 @@
     <hr />
   </div>
   <div class="container">
-    <div class="pnlProduto">
-      A001<br />
-      Banana<br />
-      Quantidade: 500
+    <div class="pnlProduto" *ngFor="let produto of produtos">
+      {{produto.codigo}}<br />
+      {{produto.nome}}<br />
+      Quantidade: {{produto.quantidade}}
       <hr />
-      <button (click)="excluir('A001')">Excluir</button>
+      <button (click)="excluir(produto.codigo)">Excluir</button>
     </div>
   </div>
 </main>

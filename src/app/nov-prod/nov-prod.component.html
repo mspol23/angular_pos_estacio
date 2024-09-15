@@ -2,14 +2,14 @@
     <div style="width:100%; margin:10px;">
         <h2 style="display:inline;">Novo Produto</h2>
         <hr />
-        <form>
+        <form (submit)="incluir()">
             <label for="codigo">Código:</label>
-            <input type="text" name="codigo"><br />
+            <input type="text" name="codigo" [(ngModel)]="produto.codigo"><br />
             <label for="nome">Nome:</label>
-            <input type="text" name="nome"><br />
+            <input type="text" name="nome" [(ngModel)]="produto.nome"><br />
             <label for="quantidade">Quantidade:</label>
-            <input type="number" name="quantidade"><br />
-            <button (click)="incluir()">Incluir</button>
+            <input type="number" name="quantidade" [(ngModel)]="produto.quantidade"><br />
+            <button type="submit">Incluir</button>
         </form>
     </div>
 </main>
