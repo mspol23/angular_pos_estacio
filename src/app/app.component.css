@@ -30,3 +30,15 @@
   margin-right: 10px;
   opacity: 50%;
 }
+#logged {
+  align-self: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#descUsu {
+  width: 150px;
+  align-self: center;
+  margin-left: auto;
+  padding: 2px;
+  border-left: dotted black 1px;
+}
